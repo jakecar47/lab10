@@ -55,6 +55,7 @@ public class MileageCalculatorNoConversion extends Application {
     public void start(Stage primaryStage) {   	
 
         // set preferences for UI components
+    	cmbUnits.setValue(defaultResult);
         tfDistance.setMaxWidth(txtWidth);
         tfCapacity.setMaxWidth(txtWidth);
         tfResult.setMaxWidth(txtWidth);
@@ -150,6 +151,7 @@ public class MileageCalculatorNoConversion extends Application {
      */
     private void resetForm() {
         // reset all form fields
+    	cmbUnits.setValue(defaultResult);
         tfDistance.setText(defaultEntry);
         tfCapacity.setText(defaultEntry);
         tfResult.setText(defaultCalc);
